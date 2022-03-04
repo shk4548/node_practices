@@ -7,7 +7,7 @@
 
 2. 의존성(Dependency)
     - 개발하는 프로젝트(애플리케이션, 패키지) 에서 설치하고 사용하는 패키지
-    - 일반 의존성
+    - 일반 의존성   
         개발하고 있는 프로젝트에서 사용하는 패키지로 꼭 배포에 포함
         $[project-ex01] npm i ...
 
@@ -31,8 +31,26 @@
     1) 프로젝트 생성 (mkdir)
     2) 프로젝트 이동 (cd)
     3) 프로젝트 초기화: 프로젝트 페니페스트 파일(package.json)
-        $[project-ex02] npm init
-        
+        $[project-ex02] npm init -y
+
+5. Module ( 중요 !)
+    1) 코어 모듈 (fs, os, ... node에서 제공해주는 모듈)
+    2) 파일 모듈 : 파일 경로로 불러 와서 모듈안의 함수 ,객체를 사용한다.
+    3) npm 모듈 : npm를 통해서 node_module에 설치하고 사용하는 모듈
+            - 원격 배포
+            - 로컬 배포
+
+6. npmjs.com의 npm registry에 패키지 배포(원격배포)
+
+7. helloweb-ex01: 웹 애플리케이션 만들어보기 ( express 프레임워크 x )
+    1) app01: http: core module 기반
+    2) app02: http, fs: core module 기반 // 파일 읽기
+    3) app03: connect, serve-static: npm package 기반
+    4) app04: connect, serve-static, connect-route: npm package 기반
+
+8. helloweb-ex02: 웹 애플리케이션 만들어보기 ( express 프레임워크 )
+
+
 #### 2. 의존성
 
 #### 3. 패키지 설치 방식
